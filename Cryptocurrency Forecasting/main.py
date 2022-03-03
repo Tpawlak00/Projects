@@ -32,7 +32,7 @@ print(req_date)
 
 data_train = df.loc['2017-12-31':'2020-12-31']['close']
 data_test = df.loc['2021':]['close']
-# print(data_test.head())
+print(data_test.head())
 # print(data_train.head())
 
 data_train = np.array(data_train)
