@@ -8,7 +8,7 @@ from sklearn.metrics import mean_squared_error
 from tensorflow.keras import Sequential
 from tensorflow.keras.layers import LSTM, Dense
 
-x=20
+x=30
 x_scaler = MinMaxScaler()
 y_scaler = MinMaxScaler()
 pred_length = 7
