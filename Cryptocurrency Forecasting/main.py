@@ -4,11 +4,9 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import MinMaxScaler
-from sklearn.metrics import mean_squared_error
 from tensorflow.keras import Sequential
 from tensorflow.keras.layers import LSTM, Dense
 
-x=30
 x_scaler = MinMaxScaler()
 y_scaler = MinMaxScaler()
 pred_length = 7
@@ -19,15 +17,7 @@ df = pd.read_csv('./data/LTC_DATA/DailyData/Binance_LTCUSDT_d.csv', index_col='d
 df.drop(['symbol'], inplace=True, axis=1)
 
 df = df.astype('float')
-value = df[['close']].astype(float)
 
-req_date = []
-initial_date = df.index[0]
-for i in range(0, pred_length):
-    req_date.append(pd.to_datetime(initial_date) + pd.DateOffset(days=i))
-
-req_date = pd.Index(req_date)
-print(req_date)
 # df['close'].plot(figsize=(14, 5))
 # plt.show()
 
@@ -47,53 +37,46 @@ for i in range(pred_length, len(data_train)-pred_length):
 x_train, y_train = np.array(x_train), np.array(y_train)
 
 # print(x_train.shape, y_train.shape)
-# print(pd.DataFrame(x_train))
-# print(pd.DataFrame(y_train))
+print(pd.DataFrame(x_train))
+print(pd.DataFrame(y_train))
 
 x_train = x_scaler.fit_transform(x_train)
 y_train = y_scaler.fit_transform(y_train)
 
 x_train = x_train.reshape(len(x_train[:]), len(x_train[0]), 1)
-print(x_train.shape)
 
 model = Sequential()
 model.add(LSTM(units=200, activation='relu', input_shape=(pred_length, 1)))
 model.add(Dense(pred_length))
 model.compile(loss='mse', optimizer='adam')
 
-model.fit(x_train, y_train, epochs=10, batch_size=1)
+model.fit(y_train, x_train, epochs=30, batch_size=1)
 model.save('saved_model/MODEL1')
 
 data_test = np.array(data_test)
-print(len(data_test))
-
-con_list = []
 
 x_test, y_test = [], []
 for i in range(7, len(data_test)):
     x_test.append(data_test[i-pred_length:i])
     y_test.append(data_test[i:i+pred_length])
 
-
-x_test, y_test = np.array(x_test), np.array(y_test)
 print(pd.DataFrame(x_test))
-
+print(pd.DataFrame(y_test))
+x_test, y_test = np.array(x_test), np.array(x_test)
 x_test = x_scaler.transform(x_test)
 x_test = x_test.reshape(len(x_test[:]), len(x_test[0]), 1)
 
-y_pred = model.predict(x_test)
+y_test = y_scaler.transform(y_test)
+y_test = y_test.reshape(len(y_test[:]), len(y_test[0]), 1)
+
+y_pred = model.predict(y_test)
 y_pred = y_scaler.inverse_transform(y_pred)
+print(y_pred)
+pred = y_pred[:, pred_length-1]
 
-pred = y_pred[:, 0]
-print(pred)
-print(value.iloc[0:len(data_test)])
-print(pd.DataFrame(pred))
-plot_data = value.iloc[pred_length:len(data_test)]
-# plot_data = plot_data.reindex(pd.date_range(plot_data.index[len(plot_data)-1],
-          #                                  req_date[pred_length-1]), fill_value="NaN")
-plot_data['Predicted'] = pred
-plot_data['close'] = plot_data['close'].astype(float)
-plot_data.rename(columns={'close': 'Real Values'}, inplace=True)
-
-plot_data.plot(figsize=(14, 5))
+values = df[0:len(pred)][['close']].astype(float)
+values['Predicted'] = pred
+print(values)
+values.rename(columns={'close': 'Real Values'}, inplace=True)
+values.plot(figsize=(14, 5))
 plt.show()
