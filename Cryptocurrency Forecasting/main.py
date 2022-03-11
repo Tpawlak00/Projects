@@ -12,7 +12,7 @@ y_scaler = MinMaxScaler()
 pred_length = 7
 
 col_list = ['unix', 'date', 'symbol', 'open', 'high', 'low', 'close', 'Volume LTC', 'Volume USDT', 'tradecount']
-df = pd.read_csv('./data/LTC_DATA/DailyData/Binance_LTCUSDT_d.csv', index_col='date', usecols=col_list,
+df = pd.read_csv('./data/LTC_DATA/DailyData/Binance_LTCUSDT_d2.csv', index_col='date', usecols=col_list,
                  low_memory=False, parse_dates=True)
 df.drop(['symbol'], inplace=True, axis=1)
 
@@ -50,13 +50,13 @@ model.add(LSTM(units=200, activation='relu', input_shape=(pred_length, 1)))
 model.add(Dense(pred_length))
 model.compile(loss='mse', optimizer='adam')
 
-model.fit(y_train, x_train, epochs=30, batch_size=1)
+model.fit(y_train, x_train, epochs=100, batch_size=1)
 model.save('saved_model/MODEL1')
 
 data_test = np.array(data_test)
 
 x_test, y_test = [], []
-for i in range(7, len(data_test)):
+for i in range(pred_length, len(data_test)):
     x_test.append(data_test[i-pred_length:i])
     y_test.append(data_test[i:i+pred_length])
 
