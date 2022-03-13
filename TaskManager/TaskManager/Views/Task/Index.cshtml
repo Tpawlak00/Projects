@@ -1,0 +1,42 @@
+﻿@model IEnumerable<TaskManager.Models.TaskModel>
+@{ 
+    ViewData["Title"] = "Index";
+
+}
+<body style="background-color: #262626;">...</body>
+ <font color="#1976d2">
+<h1>Task Manager</h1>
+</font><br>
+<p>
+    <a class="btn btn-primary" asp-action ="Create">Create New Task</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th><font color="#FFFFFF">
+                @Html.DisplayNameFor(model => model.Name)
+                </font><br>
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+
+            <td>
+                <font color="#FFFFFF">
+                <b>@Html.DisplayFor(modelItem => item.Name)</b><br>
+                @Html.DisplayFor(modelItem => item.Description)
+                </font><br>
+            </td>
+            <td>
+                @Html.ActionLink("Done", "Done", new { id=item.TaskID }, new {@class = "btn btn-success"})
+                @Html.ActionLink("Edit", "Edit", new { id=item.TaskID }, new {@class = "btn btn-info"})
+                @Html.ActionLink("Details", "Details", new {  id=item.TaskID  }, new {@class = "btn btn-warning"})
+                @Html.ActionLink("Delete", "Delete", new { id=item.TaskID }, new {@class = "btn btn-danger"})
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
