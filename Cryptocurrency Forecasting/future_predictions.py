@@ -23,12 +23,13 @@ data_test = df.loc['2021':]['close']
 data_test = np.array(data_test)
 
 model = tf.keras.models.load_model('saved_model/MODEL1')
-x_test = []
+x_test, y_test = [], []
 for i in range(pred_len, len(data_test)):
     x_test.append(data_test[i-pred_len:i])
+    y_test.append(data_test[i:i + pred_len])
 
 print(pd.DataFrame(x_test))
-
+print(pd.DataFrame(y_test))
 x_test = np.array(x_test)
 x_test = x_scaler.fit_transform(x_test)
 x_test = x_test.reshape(len(x_test[:]), len(x_test[0]), 1)
@@ -39,7 +40,7 @@ pred = y_pred[:, pred_len-1]
 print(y_pred)
 add_dates = [df.index[0]+DateOffset(days=x) for x in range(0, pred_len+1)]
 future_dates = pd.DataFrame(index=add_dates[1:], columns=df.columns)
-df_predict = pd.DataFrame(y_pred[0:pred_len, 0],
+df_predict = pd.DataFrame(y_pred[0:pred_len,0],
                           index=future_dates[:pred_len].index,
                           columns=['Future Prediction'])
 values = df[0:len(pred)][['close']].astype(float)
