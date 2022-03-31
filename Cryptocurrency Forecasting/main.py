@@ -53,7 +53,7 @@ model.add(LSTM(units=200, activation='relu', input_shape=(pred_length, 1)))
 model.add(Dense(pred_length))
 model.compile(loss='mse', optimizer='adam')
 
-model.fit(y_train, x_train, epochs=1, batch_size=1)
+model.fit(x_train, y_train, epochs=1, batch_size=1)
 model.save('saved_model/MODEL2')
 
 data_test = np.array(data_test)
