@@ -20,7 +20,7 @@ df = df.astype('float')
 data_test = df.loc['2021-01-01':'2022-01-01']['close']
 data_test = np.array(data_test)
 
-model = tf.keras.models.load_model('saved_model/MODEL1')
+model = tf.keras.models.load_model('saved_model/MODEL2')
 x_test, y_test = [], []
 for i in range(pred_len, len(data_test)):
     x_test.append(data_test[i-pred_len:i])
@@ -44,11 +44,6 @@ for i in range(0, pred_len):
     y_pred = x_scaler.inverse_transform(y_pred)
     for j in range(0, pred_len):
         future_pred.append(y_pred[-len(y_pred[::-1, 0])+pred_len-j, 0])
-
-print(len(test_pred))
-print(test_pred)
-print(len(future_pred))
-print(future_pred)
 
 values = df['2021-01-01':'2022-03-22'][['close']].astype(float)
 
