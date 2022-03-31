@@ -9,7 +9,7 @@ from tensorflow.keras.layers import LSTM, Dense
 
 x_scaler = MinMaxScaler()
 y_scaler = MinMaxScaler()
-pred_length = 7
+pred_length = 21
 
 col_list = ['unix', 'date', 'symbol', 'open', 'high', 'low', 'close', 'Volume LTC', 'Volume USDT', 'tradecount']
 df = pd.read_csv('./data/LTC_DATA/DailyData/Binance_LTCUSDT_d3.csv', index_col='date', usecols=col_list,
@@ -27,7 +27,7 @@ print(data_test.head())
 print(data_train.head())
 
 data_train = np.array(data_train)
-
+data_train = data_train[::-1]
 x_train, y_train = [], []
 
 for i in range(0, len(data_train)-pred_length-1):
@@ -35,7 +35,8 @@ for i in range(0, len(data_train)-pred_length-1):
 
 for i in range(1, len(data_train)-pred_length):
     y_train.append(data_train[i:i+pred_length])
-
+print(pd.DataFrame(x_train))
+print(pd.DataFrame(y_train))
 x_train, y_train = np.array(x_train), np.array(y_train)
 print(x_train.shape, y_train.shape)
 
@@ -49,16 +50,17 @@ x_train, y_train = np.array(x_train), np.array(y_train)
 x_train = x_train.reshape(len(x_train[:]), len(x_train[0]), 1)
 
 model = Sequential()
-model.add(LSTM(units=200, activation='relu', input_shape=(pred_length, 1)))
+model.add(LSTM(units=256, activation='relu', input_shape=(pred_length, 1)))
 model.add(Dense(pred_length))
 model.compile(loss='mse', optimizer='adam')
 
-model.fit(x_train, y_train, epochs=1, batch_size=1)
+model.fit(x_train, y_train, epochs=20, batch_size=1)
 model.save('saved_model/MODEL2')
 
 data_test = np.array(data_test)
-
+data_test = data_test[::-1]
 x_test, y_test = [], []
+
 for i in range(0, len(data_train)-pred_length-1):
     x_test.append(data_train[i:i+pred_length])
 

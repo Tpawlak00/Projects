@@ -10,7 +10,7 @@ from sklearn.preprocessing import MinMaxScaler
 x_scaler = MinMaxScaler()
 y_scaler = MinMaxScaler()
 
-pred_len = 7
+pred_len = 21
 col_list = ['unix', 'date', 'symbol', 'open', 'high', 'low', 'close', 'Volume LTC', 'Volume USDT', 'tradecount']
 df = pd.read_csv('./data/LTC_DATA/DailyData/Binance_LTCUSDT_d3.csv', index_col='date', usecols=col_list,
                  low_memory=False, parse_dates=True)
@@ -19,6 +19,7 @@ df = df.astype('float')
 
 data_test = df.loc['2021-01-01':'2022-01-01']['close']
 data_test = np.array(data_test)
+data_test = data_test[::-1]
 
 model = tf.keras.models.load_model('saved_model/MODEL2')
 x_test, y_test = [], []
@@ -33,17 +34,16 @@ x_test = x_test.reshape(len(x_test[:]), len(x_test[0]), 1)
 # making test predictions to see how the models works
 y_pred = model.predict(x_test)
 y_pred = x_scaler.inverse_transform(y_pred)
-test_pred = y_pred[::-1, 0]
+test_pred = y_pred[:, pred_len-1]
 
 
 # making future predictions by predicting a few times
 future_pred = []
-for i in range(0, pred_len):
+for i in range(0, 3*pred_len):
     y_pred = x_scaler.transform(y_pred)
     y_pred = model.predict(y_pred)
     y_pred = x_scaler.inverse_transform(y_pred)
-    for j in range(0, pred_len):
-        future_pred.append(y_pred[-len(y_pred[::-1, 0])+pred_len-j, 0])
+    future_pred.append(y_pred[-1, pred_len-1])
 
 values = df['2021-01-01':'2022-03-22'][['close']].astype(float)
 
