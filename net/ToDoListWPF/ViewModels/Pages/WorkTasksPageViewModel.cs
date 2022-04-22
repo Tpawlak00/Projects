@@ -5,18 +5,12 @@ using System.Windows.Input;
 using ToDoList.Database;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Collections.Generic;
-using System.Globalization;
-
 namespace ToDoListWPF
 {
-    /// <summary>
-    /// Klasa zawierająca w sobie logike funkcjonalści znajdujących się w aplikacji okienkowej 
-    /// </summary>
-    /// 
-
-   
+        /// <summary>
+        /// Klasa zawierająca w sobie logike funkcjonalści znajdujących się w aplikacji okienkowej 
+        /// </summary>
+        /// 
     public class WorkTasksPageViewModel : BaseViewModel
     {
 
@@ -37,8 +31,6 @@ namespace ToDoListWPF
         /// <summary>
         /// Załadowanie do listy gdzei wyświetlane są nasze taski tasków z bazy danych
         /// </summary>
-
-
         public WorkTasksPageViewModel()
         {
             AddNewTaskCommend = new RelayCommand(AddNewTask);
@@ -91,6 +83,7 @@ namespace ToDoListWPF
                 };
 
                 db.Tasks.Add(taskObject);
+
             }
             try
             {

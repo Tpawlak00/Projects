@@ -5,16 +5,6 @@ using System.Net;
 using System.Windows.Controls;
 using System.Windows.Media.Imaging;
 using ToDoListWPF.Weather;
-using System;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Windows.Input;
-using ToDoList.Database;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Collections.Generic;
-using System.Globalization;
 
 namespace ToDoListWPF
 {
@@ -22,33 +12,6 @@ namespace ToDoListWPF
     /// Logika interakcji dla klasy WorkTAsksPage.xaml
     /// </summary>
     /// 
-
-    public class MainViewModel
-    {
-        public HashSet<DateTime> Dates { get; } = new HashSet<DateTime>();
-
-        public MainViewModel()
-        {
-            // highlight today and tomorrow
-            this.Dates.Add(DateTime.Today);
-            this.Dates.Add(DateTime.Today.AddDays(5));
-        }
-    }
-
-    public class LookupConverter : IMultiValueConverter
-    {
-        public object Convert(object[] values, Type targetType, object parameter, CultureInfo culture)
-        {
-            var date = (DateTime)values[0];
-            var dates = values[1] as HashSet<DateTime>;
-            return dates.Contains(date);
-        }
-        public object[] ConvertBack(object value, Type[] targetTypes, object parameter, CultureInfo culture)
-        {
-            throw new NotImplementedException();
-
-        }
-    }
 
     public partial class WorkTAsksPage : Page
     {

@@ -16,10 +16,12 @@ items:
   source:
     id: WorkTAsksPage
     path: C:\Users\raseg\source\repos\net-java-proj\ToDoListWPF\Pages\WorkTAsksPage.xaml.cs
-    startLine: 52
+    startLine: 15
   assemblies:
   - ToDoListWPF
   namespace: ToDoListWPF
+  summary: "\nLogika interakcji dla klasy WorkTAsksPage.xaml\n"
+  example: []
   syntax:
     content: 'public class WorkTAsksPage : Page, IAnimatable, IFrameworkInputElement, IInputElement, ISupportInitialize, IQueryAmbient, IAddChild'
     content.vb: >-
@@ -653,7 +655,7 @@ items:
   source:
     id: .ctor
     path: C:\Users\raseg\source\repos\net-java-proj\ToDoListWPF\Pages\WorkTAsksPage.xaml.cs
-    startLine: 58
+    startLine: 21
   assemblies:
   - ToDoListWPF
   namespace: ToDoListWPF

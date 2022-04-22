@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\raseg\source\repos\net-java-proj\ToDoListWPF\obj\Debug\
+C:\Users\micha\OneDrive\Pulpit\Projects\net\ToDoListWPF\obj\Debug\
 ToDoListWPF
 none
 false
 DEBUG;TRACE
-C:\Users\raseg\source\repos\net-java-proj\ToDoListWPF\App.xaml
+C:\Users\micha\OneDrive\Pulpit\Projects\net\ToDoListWPF\App.xaml
 4-161705472
 4-1670751403
 17-59495747
-481554242154
+48336106832
 Controls\WorkTask.xaml;MainWindow.xaml;Pages\WorkTAsksPage.xaml;Styles\Buttons.xaml;
 
-True
+False
 

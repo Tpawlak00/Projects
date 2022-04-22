@@ -6,10 +6,6 @@
     name: App
   - uid: ToDoListWPF.BaseViewModel
     name: BaseViewModel
-  - uid: ToDoListWPF.LookupConverter
-    name: LookupConverter
-  - uid: ToDoListWPF.MainViewModel
-    name: MainViewModel
   - uid: ToDoListWPF.MainWindow
     name: MainWindow
   - uid: ToDoListWPF.RelayCommand

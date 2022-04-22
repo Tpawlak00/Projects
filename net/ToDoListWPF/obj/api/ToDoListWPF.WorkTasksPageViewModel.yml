@@ -23,7 +23,7 @@ items:
   source:
     id: WorkTasksPageViewModel
     path: C:\Users\raseg\source\repos\net-java-proj\ToDoListWPF\ViewModels\Pages\WorkTasksPageViewModel.cs
-    startLine: 19
+    startLine: 13
   assemblies:
   - ToDoListWPF
   namespace: ToDoListWPF
@@ -70,7 +70,7 @@ items:
   source:
     id: WorkTaskList
     path: C:\Users\raseg\source\repos\net-java-proj\ToDoListWPF\ViewModels\Pages\WorkTasksPageViewModel.cs
-    startLine: 26
+    startLine: 20
   assemblies:
   - ToDoListWPF
   namespace: ToDoListWPF
@@ -103,7 +103,7 @@ items:
   source:
     id: NewWorkTaskTitle
     path: C:\Users\raseg\source\repos\net-java-proj\ToDoListWPF\ViewModels\Pages\WorkTasksPageViewModel.cs
-    startLine: 28
+    startLine: 22
   assemblies:
   - ToDoListWPF
   namespace: ToDoListWPF
@@ -134,7 +134,7 @@ items:
   source:
     id: NewWorkTaskDescription
     path: C:\Users\raseg\source\repos\net-java-proj\ToDoListWPF\ViewModels\Pages\WorkTasksPageViewModel.cs
-    startLine: 30
+    startLine: 24
   assemblies:
   - ToDoListWPF
   namespace: ToDoListWPF
@@ -165,7 +165,7 @@ items:
   source:
     id: AddNewTaskCommend
     path: C:\Users\raseg\source\repos\net-java-proj\ToDoListWPF\ViewModels\Pages\WorkTasksPageViewModel.cs
-    startLine: 31
+    startLine: 25
   assemblies:
   - ToDoListWPF
   namespace: ToDoListWPF
@@ -196,7 +196,7 @@ items:
   source:
     id: DeleteSelectedTasksCommand
     path: C:\Users\raseg\source\repos\net-java-proj\ToDoListWPF\ViewModels\Pages\WorkTasksPageViewModel.cs
-    startLine: 32
+    startLine: 26
   assemblies:
   - ToDoListWPF
   namespace: ToDoListWPF
@@ -227,7 +227,7 @@ items:
   source:
     id: EditSelectedTasksCommand
     path: C:\Users\raseg\source\repos\net-java-proj\ToDoListWPF\ViewModels\Pages\WorkTasksPageViewModel.cs
-    startLine: 33
+    startLine: 27
   assemblies:
   - ToDoListWPF
   namespace: ToDoListWPF
@@ -258,7 +258,7 @@ items:
   source:
     id: SelectDate
     path: C:\Users\raseg\source\repos\net-java-proj\ToDoListWPF\ViewModels\Pages\WorkTasksPageViewModel.cs
-    startLine: 34
+    startLine: 28
   assemblies:
   - ToDoListWPF
   namespace: ToDoListWPF
@@ -291,7 +291,7 @@ items:
   source:
     id: .ctor
     path: C:\Users\raseg\source\repos\net-java-proj\ToDoListWPF\ViewModels\Pages\WorkTasksPageViewModel.cs
-    startLine: 41
+    startLine: 33
   assemblies:
   - ToDoListWPF
   namespace: ToDoListWPF

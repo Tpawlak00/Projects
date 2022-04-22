@@ -17,35 +17,25 @@
       "dest": "obj/api"
     }
   ],
-  "pdf": {
+  "build": {
     "content": [
       {
         "files": [
           "api/**.yml"
         ],
-        "exclude": [
-          "**/toc.yml",
-          "**/toc.md"
-        ]
+        "cwd": "obj"
       },
       {
         "files": [
+          "api/*.md",
           "articles/**.md",
-          "articles/**/toc.yml",
           "toc.yml",
-          "*.md",
-          "pdf/*"
+          "*.md"
         ],
         "exclude": [
-          "**/bin/**",
-          "**/obj/**",
-          "_site_pdf/**",
-          "**/toc.yml",
-          "**/toc.md"
+          "obj/**",
+          "_site/**"
         ]
-      },
-      {
-        "files": "pdf/toc.yml"
       }
     ],
     "resource": [
@@ -54,9 +44,8 @@
           "images/**"
         ],
         "exclude": [
-          "**/bin/**",
-          "**/obj/**",
-          "_site_pdf/**"
+          "obj/**",
+          "_site/**"
         ]
       }
     ],
@@ -66,16 +55,14 @@
           "apidoc/**.md"
         ],
         "exclude": [
-          "**/bin/**",
-          "**/obj/**",
-          "_site_pdf/**"
+          "obj/**",
+          "_site/**"
         ]
       }
     ],
-    "dest": "_site_pdf"
-  },
-  "wkhtmltopdf": {
-    "additionalArguments": "--enable-local-file-access"
+    "dest": "_site",
+    "template": [
+      "default"
+    ]
   }
-
 }

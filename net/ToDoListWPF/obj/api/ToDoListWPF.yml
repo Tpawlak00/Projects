@@ -6,8 +6,6 @@ items:
   children:
   - ToDoListWPF.App
   - ToDoListWPF.BaseViewModel
-  - ToDoListWPF.LookupConverter
-  - ToDoListWPF.MainViewModel
   - ToDoListWPF.MainWindow
   - ToDoListWPF.RelayCommand
   - ToDoListWPF.Task
@@ -72,16 +70,6 @@ references:
   name: MainWindow
   nameWithType: MainWindow
   fullName: ToDoListWPF.MainWindow
-- uid: ToDoListWPF.MainViewModel
-  commentId: T:ToDoListWPF.MainViewModel
-  name: MainViewModel
-  nameWithType: MainViewModel
-  fullName: ToDoListWPF.MainViewModel
-- uid: ToDoListWPF.LookupConverter
-  commentId: T:ToDoListWPF.LookupConverter
-  name: LookupConverter
-  nameWithType: LookupConverter
-  fullName: ToDoListWPF.LookupConverter
 - uid: ToDoListWPF.WorkTAsksPage
   commentId: T:ToDoListWPF.WorkTAsksPage
   name: WorkTAsksPage
