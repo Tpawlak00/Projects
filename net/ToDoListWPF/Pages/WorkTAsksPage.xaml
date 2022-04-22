@@ -28,7 +28,9 @@
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type Calendar}">
                         <StackPanel x:Name="PART_Root" HorizontalAlignment="Center">
-                            <CalendarItem x:Name="PART_CalendarItem" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Style="{TemplateBinding CalendarItemStyle}"/>
+                            <CalendarItem x:Name="PART_CalendarItem" Background="{TemplateBinding Background}"
+                                          BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}"
+                                          Style="{TemplateBinding CalendarItemStyle}"/>
                         </StackPanel>
                     </ControlTemplate>
                 </Setter.Value>
@@ -145,7 +147,7 @@
                                 </VisualStateGroup>
                             </VisualStateManager.VisualStateGroups>
                             <Rectangle x:Name="TodayBackground" Fill="#009429" Opacity="0" RadiusX="5" RadiusY="10"/>
-                            <Rectangle x:Name="SelectedBackground" Fill="#FD413C" Opacity="0" RadiusX="5" RadiusY="10"/>
+                            <Rectangle x:Name="SelectedBackground" Fill="#ffb800" Opacity="0" RadiusX="5" RadiusY="10"/>
                             <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}"/>
                             <Rectangle x:Name="HighlightBackground" Fill="#FD413C" Opacity="0" RadiusX="5" RadiusY="0"/>
                             <ContentPresenter x:Name="NormalText" TextElement.Foreground="#FFFFFF" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="5,1,5,1" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
@@ -420,14 +422,23 @@
         <Viewbox Stretch="Uniform">
 
             <Calendar Name="cldSample" 
+                SelectionMode="MultipleRange" 
                 CalendarItemStyle="{DynamicResource CalendarCalendarItemStyle1}"
                       CalendarButtonStyle="{DynamicResource CalendarCalendarButtonStyle1}"
                       CalendarDayButtonStyle="{DynamicResource CalendarCalendarDayButtonStyle1}"
                       Style="{DynamicResource CalendarStyle1}"
                       Height="275" Width="332"
-                      SelectedDate="{Binding SelectedDate, Mode=TwoWay}"/>
+                      xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+                <Calendar.SelectedDates>
+                    <sys:DateTime>4/23/2022</sys:DateTime>
+                    <sys:DateTime>4/25/2022</sys:DateTime>
+                    <sys:DateTime>4/29/2022</sys:DateTime>
+                </Calendar.SelectedDates>
+
+            </Calendar>
         </Viewbox>
-        
+
         <Border BorderThickness="2"
                 Grid.Row="0"
                 CornerRadius="5,0,0,5"
@@ -435,7 +446,7 @@
                 Background="#282F33"
                 Margin="185,395,185,137"
                 />
-        
+
         <Border BorderThickness="2"
                 Grid.Row="0"
                 CornerRadius="5,5,5,5"
@@ -468,7 +479,7 @@
             <TextBlock Text="Description:" Foreground="#FFFFFF" FontFamily="Trebuchet MS" Style="{StaticResource DefaultBlockStyle}"/>
             <TextBox Text="{Binding NewWorkTaskDescription,Mode=TwoWay}" Style="{StaticResource DefaultBoxStyle}"/>
             <TextBlock Text="Date:" Foreground="#FFFFFF" FontFamily="Trebuchet MS" Style="{StaticResource DefaultBlockStyle}"/>
-            <TextBox Text="{Binding SelectedDate,Mode=TwoWay}" Style="{StaticResource DefaultBoxStyle}"/>
+            <TextBox Text="{Binding SelectDate,Mode=TwoWay}" Style="{StaticResource DefaultBoxStyle}"/>
 
             <Grid>
                 <Grid.ColumnDefinitions>
@@ -476,8 +487,7 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
-                <Button Command="{Binding AddNewTaskCommend}" Style="{StaticResource DefaultButtonStyle}" Margin="50,30,-10,100" Content="Add"></Button>
-
+                <Button Command="{Binding AddNewTaskCommend}" Style="{StaticResource DefaultButtonStyle}" Margin="50,30,-10,100" Content="Add" Cursor="Hand"></Button>
 
             </Grid>
 
@@ -500,7 +510,9 @@
 
             </ScrollViewer>
             <Button Command="{Binding DeleteSelectedTasksCommand}" Grid.Column="1" Style="{StaticResource DefaultButtonStyle}"
-                    Content="Delete" Margin="-140,35,70,20" Foreground="black" Background="#FD413C" FontSize="13" FontStyle="Italic"></Button>
+                    Content="Delete" Margin="-140,35,70,20" Foreground="black" Background="#FD413C" FontSize="13" FontStyle="Italic"  Cursor="Hand"></Button>
+            <Button Command="{Binding EditSelectedTasksCommand}" Foreground="black" Style="{StaticResource DefaultButtonStyle}" Background="#ffb800" Margin="-140,84,70,-25" FontSize="13" FontStyle="Italic"
+                    Content="Edit" Cursor="Hand" Grid.ColumnSpan="2"></Button>
         </StackPanel>
 
     </Grid>

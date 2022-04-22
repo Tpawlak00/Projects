@@ -1,0 +1,606 @@
+### YamlMime:ManagedReference
+items:
+- uid: ToDoListWPF.RelayCommand
+  commentId: T:ToDoListWPF.RelayCommand
+  id: RelayCommand
+  parent: ToDoListWPF
+  children:
+  - ToDoListWPF.RelayCommand.#ctor(System.Action)
+  - ToDoListWPF.RelayCommand.CanExecute(System.Object)
+  - ToDoListWPF.RelayCommand.CanExecuteChanged
+  - ToDoListWPF.RelayCommand.Execute(System.Object)
+  langs:
+  - csharp
+  - vb
+  name: RelayCommand
+  nameWithType: RelayCommand
+  fullName: ToDoListWPF.RelayCommand
+  type: Class
+  source:
+    id: RelayCommand
+    path: C:\Users\raseg\source\repos\net-java-proj\ToDoListWPF\Helpers\RelayCommand.cs
+    startLine: 5
+  assemblies:
+  - ToDoListWPF
+  namespace: ToDoListWPF
+  syntax:
+    content: 'public class RelayCommand : ICommand'
+    content.vb: >-
+      Public Class RelayCommand
+          Implements ICommand
+  inheritance:
+  - System.Object
+  implements:
+  - System.Windows.Input.ICommand
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: ToDoListWPF.RelayCommand.CanExecuteChanged
+  commentId: E:ToDoListWPF.RelayCommand.CanExecuteChanged
+  id: CanExecuteChanged
+  parent: ToDoListWPF.RelayCommand
+  langs:
+  - csharp
+  - vb
+  name: CanExecuteChanged
+  nameWithType: RelayCommand.CanExecuteChanged
+  fullName: ToDoListWPF.RelayCommand.CanExecuteChanged
+  type: Event
+  source:
+    id: CanExecuteChanged
+    path: C:\Users\raseg\source\repos\net-java-proj\ToDoListWPF\Helpers\RelayCommand.cs
+    startLine: 9
+  assemblies:
+  - ToDoListWPF
+  namespace: ToDoListWPF
+  syntax:
+    content: public event EventHandler CanExecuteChanged
+    return:
+      type: System.EventHandler
+    content.vb: Public Event CanExecuteChanged As EventHandler
+  implements:
+  - System.Windows.Input.ICommand.CanExecuteChanged
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: ToDoListWPF.RelayCommand.#ctor(System.Action)
+  commentId: M:ToDoListWPF.RelayCommand.#ctor(System.Action)
+  id: '#ctor(System.Action)'
+  parent: ToDoListWPF.RelayCommand
+  langs:
+  - csharp
+  - vb
+  name: RelayCommand(Action)
+  nameWithType: RelayCommand.RelayCommand(Action)
+  fullName: ToDoListWPF.RelayCommand.RelayCommand(System.Action)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Users\raseg\source\repos\net-java-proj\ToDoListWPF\Helpers\RelayCommand.cs
+    startLine: 11
+  assemblies:
+  - ToDoListWPF
+  namespace: ToDoListWPF
+  syntax:
+    content: public RelayCommand(Action action)
+    parameters:
+    - id: action
+      type: System.Action
+    content.vb: Public Sub New(action As Action)
+  overload: ToDoListWPF.RelayCommand.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: ToDoListWPF.RelayCommand.CanExecute(System.Object)
+  commentId: M:ToDoListWPF.RelayCommand.CanExecute(System.Object)
+  id: CanExecute(System.Object)
+  parent: ToDoListWPF.RelayCommand
+  langs:
+  - csharp
+  - vb
+  name: CanExecute(Object)
+  nameWithType: RelayCommand.CanExecute(Object)
+  fullName: ToDoListWPF.RelayCommand.CanExecute(System.Object)
+  type: Method
+  source:
+    id: CanExecute
+    path: C:\Users\raseg\source\repos\net-java-proj\ToDoListWPF\Helpers\RelayCommand.cs
+    startLine: 15
+  assemblies:
+  - ToDoListWPF
+  namespace: ToDoListWPF
+  syntax:
+    content: public bool CanExecute(object parameter)
+    parameters:
+    - id: parameter
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Function CanExecute(parameter As Object) As Boolean
+  overload: ToDoListWPF.RelayCommand.CanExecute*
+  implements:
+  - System.Windows.Input.ICommand.CanExecute(System.Object)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: ToDoListWPF.RelayCommand.Execute(System.Object)
+  commentId: M:ToDoListWPF.RelayCommand.Execute(System.Object)
+  id: Execute(System.Object)
+  parent: ToDoListWPF.RelayCommand
+  langs:
+  - csharp
+  - vb
+  name: Execute(Object)
+  nameWithType: RelayCommand.Execute(Object)
+  fullName: ToDoListWPF.RelayCommand.Execute(System.Object)
+  type: Method
+  source:
+    id: Execute
+    path: C:\Users\raseg\source\repos\net-java-proj\ToDoListWPF\Helpers\RelayCommand.cs
+    startLine: 20
+  assemblies:
+  - ToDoListWPF
+  namespace: ToDoListWPF
+  syntax:
+    content: public void Execute(object parameter)
+    parameters:
+    - id: parameter
+      type: System.Object
+    content.vb: Public Sub Execute(parameter As Object)
+  overload: ToDoListWPF.RelayCommand.Execute*
+  implements:
+  - System.Windows.Input.ICommand.Execute(System.Object)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: ToDoListWPF
+  commentId: N:ToDoListWPF
+  name: ToDoListWPF
+  nameWithType: ToDoListWPF
+  fullName: ToDoListWPF
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Windows.Input.ICommand
+  commentId: T:System.Windows.Input.ICommand
+  parent: System.Windows.Input
+  isExternal: true
+  name: ICommand
+  nameWithType: ICommand
+  fullName: System.Windows.Input.ICommand
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Windows.Input
+  commentId: N:System.Windows.Input
+  isExternal: true
+  name: System.Windows.Input
+  nameWithType: System.Windows.Input
+  fullName: System.Windows.Input
+- uid: System.Windows.Input.ICommand.CanExecuteChanged
+  commentId: E:System.Windows.Input.ICommand.CanExecuteChanged
+  parent: System.Windows.Input.ICommand
+  isExternal: true
+  name: CanExecuteChanged
+  nameWithType: ICommand.CanExecuteChanged
+  fullName: System.Windows.Input.ICommand.CanExecuteChanged
+- uid: System.EventHandler
+  commentId: T:System.EventHandler
+  parent: System
+  isExternal: true
+  name: EventHandler
+  nameWithType: EventHandler
+  fullName: System.EventHandler
+- uid: ToDoListWPF.RelayCommand.#ctor*
+  commentId: Overload:ToDoListWPF.RelayCommand.#ctor
+  name: RelayCommand
+  nameWithType: RelayCommand.RelayCommand
+  fullName: ToDoListWPF.RelayCommand.RelayCommand
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: ToDoListWPF.RelayCommand.CanExecute*
+  commentId: Overload:ToDoListWPF.RelayCommand.CanExecute
+  name: CanExecute
+  nameWithType: RelayCommand.CanExecute
+  fullName: ToDoListWPF.RelayCommand.CanExecute
+- uid: System.Windows.Input.ICommand.CanExecute(System.Object)
+  commentId: M:System.Windows.Input.ICommand.CanExecute(System.Object)
+  parent: System.Windows.Input.ICommand
+  isExternal: true
+  name: CanExecute(Object)
+  nameWithType: ICommand.CanExecute(Object)
+  fullName: System.Windows.Input.ICommand.CanExecute(System.Object)
+  spec.csharp:
+  - uid: System.Windows.Input.ICommand.CanExecute(System.Object)
+    name: CanExecute
+    nameWithType: ICommand.CanExecute
+    fullName: System.Windows.Input.ICommand.CanExecute
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Windows.Input.ICommand.CanExecute(System.Object)
+    name: CanExecute
+    nameWithType: ICommand.CanExecute
+    fullName: System.Windows.Input.ICommand.CanExecute
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: ToDoListWPF.RelayCommand.Execute*
+  commentId: Overload:ToDoListWPF.RelayCommand.Execute
+  name: Execute
+  nameWithType: RelayCommand.Execute
+  fullName: ToDoListWPF.RelayCommand.Execute
+- uid: System.Windows.Input.ICommand.Execute(System.Object)
+  commentId: M:System.Windows.Input.ICommand.Execute(System.Object)
+  parent: System.Windows.Input.ICommand
+  isExternal: true
+  name: Execute(Object)
+  nameWithType: ICommand.Execute(Object)
+  fullName: System.Windows.Input.ICommand.Execute(System.Object)
+  spec.csharp:
+  - uid: System.Windows.Input.ICommand.Execute(System.Object)
+    name: Execute
+    nameWithType: ICommand.Execute
+    fullName: System.Windows.Input.ICommand.Execute
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Windows.Input.ICommand.Execute(System.Object)
+    name: Execute
+    nameWithType: ICommand.Execute
+    fullName: System.Windows.Input.ICommand.Execute
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

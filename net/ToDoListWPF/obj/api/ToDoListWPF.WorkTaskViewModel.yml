@@ -1,0 +1,625 @@
+### YamlMime:ManagedReference
+items:
+- uid: ToDoListWPF.WorkTaskViewModel
+  commentId: T:ToDoListWPF.WorkTaskViewModel
+  id: WorkTaskViewModel
+  parent: ToDoListWPF
+  children:
+  - ToDoListWPF.WorkTaskViewModel.CreatedDate
+  - ToDoListWPF.WorkTaskViewModel.Description
+  - ToDoListWPF.WorkTaskViewModel.Id
+  - ToDoListWPF.WorkTaskViewModel.IsSelected
+  - ToDoListWPF.WorkTaskViewModel.Title
+  langs:
+  - csharp
+  - vb
+  name: WorkTaskViewModel
+  nameWithType: WorkTaskViewModel
+  fullName: ToDoListWPF.WorkTaskViewModel
+  type: Class
+  source:
+    id: WorkTaskViewModel
+    path: C:\Users\raseg\source\repos\net-java-proj\ToDoListWPF\ViewModels\Controls\WorkTaskViewModel.cs
+    startLine: 11
+  assemblies:
+  - ToDoListWPF
+  namespace: ToDoListWPF
+  summary: "\nKlasa przechowujaca wartosci z jakich musi sie skladac nasz Task\n"
+  example: []
+  syntax:
+    content: 'public class WorkTaskViewModel : BaseViewModel, INotifyPropertyChanged'
+    content.vb: >-
+      Public Class WorkTaskViewModel
+          Inherits BaseViewModel
+          Implements INotifyPropertyChanged
+  inheritance:
+  - System.Object
+  - ToDoListWPF.BaseViewModel
+  implements:
+  - System.ComponentModel.INotifyPropertyChanged
+  inheritedMembers:
+  - ToDoListWPF.BaseViewModel.PropertyChanged
+  - ToDoListWPF.BaseViewModel.OnPropertyChanged(System.String)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: ToDoListWPF.WorkTaskViewModel.Id
+  commentId: P:ToDoListWPF.WorkTaskViewModel.Id
+  id: Id
+  parent: ToDoListWPF.WorkTaskViewModel
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: WorkTaskViewModel.Id
+  fullName: ToDoListWPF.WorkTaskViewModel.Id
+  type: Property
+  source:
+    id: Id
+    path: C:\Users\raseg\source\repos\net-java-proj\ToDoListWPF\ViewModels\Controls\WorkTaskViewModel.cs
+    startLine: 13
+  assemblies:
+  - ToDoListWPF
+  namespace: ToDoListWPF
+  syntax:
+    content: public int Id { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Id As Integer
+  overload: ToDoListWPF.WorkTaskViewModel.Id*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ToDoListWPF.WorkTaskViewModel.IsSelected
+  commentId: P:ToDoListWPF.WorkTaskViewModel.IsSelected
+  id: IsSelected
+  parent: ToDoListWPF.WorkTaskViewModel
+  langs:
+  - csharp
+  - vb
+  name: IsSelected
+  nameWithType: WorkTaskViewModel.IsSelected
+  fullName: ToDoListWPF.WorkTaskViewModel.IsSelected
+  type: Property
+  source:
+    id: IsSelected
+    path: C:\Users\raseg\source\repos\net-java-proj\ToDoListWPF\ViewModels\Controls\WorkTaskViewModel.cs
+    startLine: 14
+  assemblies:
+  - ToDoListWPF
+  namespace: ToDoListWPF
+  syntax:
+    content: public bool IsSelected { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsSelected As Boolean
+  overload: ToDoListWPF.WorkTaskViewModel.IsSelected*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ToDoListWPF.WorkTaskViewModel.Title
+  commentId: P:ToDoListWPF.WorkTaskViewModel.Title
+  id: Title
+  parent: ToDoListWPF.WorkTaskViewModel
+  langs:
+  - csharp
+  - vb
+  name: Title
+  nameWithType: WorkTaskViewModel.Title
+  fullName: ToDoListWPF.WorkTaskViewModel.Title
+  type: Property
+  source:
+    id: Title
+    path: C:\Users\raseg\source\repos\net-java-proj\ToDoListWPF\ViewModels\Controls\WorkTaskViewModel.cs
+    startLine: 15
+  assemblies:
+  - ToDoListWPF
+  namespace: ToDoListWPF
+  syntax:
+    content: public string Title { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Title As String
+  overload: ToDoListWPF.WorkTaskViewModel.Title*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ToDoListWPF.WorkTaskViewModel.Description
+  commentId: P:ToDoListWPF.WorkTaskViewModel.Description
+  id: Description
+  parent: ToDoListWPF.WorkTaskViewModel
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: WorkTaskViewModel.Description
+  fullName: ToDoListWPF.WorkTaskViewModel.Description
+  type: Property
+  source:
+    id: Description
+    path: C:\Users\raseg\source\repos\net-java-proj\ToDoListWPF\ViewModels\Controls\WorkTaskViewModel.cs
+    startLine: 16
+  assemblies:
+  - ToDoListWPF
+  namespace: ToDoListWPF
+  syntax:
+    content: public string Description { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Description As String
+  overload: ToDoListWPF.WorkTaskViewModel.Description*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: ToDoListWPF.WorkTaskViewModel.CreatedDate
+  commentId: P:ToDoListWPF.WorkTaskViewModel.CreatedDate
+  id: CreatedDate
+  parent: ToDoListWPF.WorkTaskViewModel
+  langs:
+  - csharp
+  - vb
+  name: CreatedDate
+  nameWithType: WorkTaskViewModel.CreatedDate
+  fullName: ToDoListWPF.WorkTaskViewModel.CreatedDate
+  type: Property
+  source:
+    id: CreatedDate
+    path: C:\Users\raseg\source\repos\net-java-proj\ToDoListWPF\ViewModels\Controls\WorkTaskViewModel.cs
+    startLine: 17
+  assemblies:
+  - ToDoListWPF
+  namespace: ToDoListWPF
+  syntax:
+    content: public DateTime CreatedDate { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property CreatedDate As Date
+  overload: ToDoListWPF.WorkTaskViewModel.CreatedDate*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: ToDoListWPF
+  commentId: N:ToDoListWPF
+  name: ToDoListWPF
+  nameWithType: ToDoListWPF
+  fullName: ToDoListWPF
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: ToDoListWPF.BaseViewModel
+  commentId: T:ToDoListWPF.BaseViewModel
+  parent: ToDoListWPF
+  name: BaseViewModel
+  nameWithType: BaseViewModel
+  fullName: ToDoListWPF.BaseViewModel
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: ToDoListWPF.BaseViewModel.PropertyChanged
+  commentId: E:ToDoListWPF.BaseViewModel.PropertyChanged
+  parent: ToDoListWPF.BaseViewModel
+  name: PropertyChanged
+  nameWithType: BaseViewModel.PropertyChanged
+  fullName: ToDoListWPF.BaseViewModel.PropertyChanged
+- uid: ToDoListWPF.BaseViewModel.OnPropertyChanged(System.String)
+  commentId: M:ToDoListWPF.BaseViewModel.OnPropertyChanged(System.String)
+  parent: ToDoListWPF.BaseViewModel
+  isExternal: true
+  name: OnPropertyChanged(String)
+  nameWithType: BaseViewModel.OnPropertyChanged(String)
+  fullName: ToDoListWPF.BaseViewModel.OnPropertyChanged(System.String)
+  spec.csharp:
+  - uid: ToDoListWPF.BaseViewModel.OnPropertyChanged(System.String)
+    name: OnPropertyChanged
+    nameWithType: BaseViewModel.OnPropertyChanged
+    fullName: ToDoListWPF.BaseViewModel.OnPropertyChanged
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: ToDoListWPF.BaseViewModel.OnPropertyChanged(System.String)
+    name: OnPropertyChanged
+    nameWithType: BaseViewModel.OnPropertyChanged
+    fullName: ToDoListWPF.BaseViewModel.OnPropertyChanged
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+- uid: ToDoListWPF.WorkTaskViewModel.Id*
+  commentId: Overload:ToDoListWPF.WorkTaskViewModel.Id
+  name: Id
+  nameWithType: WorkTaskViewModel.Id
+  fullName: ToDoListWPF.WorkTaskViewModel.Id
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: ToDoListWPF.WorkTaskViewModel.IsSelected*
+  commentId: Overload:ToDoListWPF.WorkTaskViewModel.IsSelected
+  name: IsSelected
+  nameWithType: WorkTaskViewModel.IsSelected
+  fullName: ToDoListWPF.WorkTaskViewModel.IsSelected
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: ToDoListWPF.WorkTaskViewModel.Title*
+  commentId: Overload:ToDoListWPF.WorkTaskViewModel.Title
+  name: Title
+  nameWithType: WorkTaskViewModel.Title
+  fullName: ToDoListWPF.WorkTaskViewModel.Title
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: ToDoListWPF.WorkTaskViewModel.Description*
+  commentId: Overload:ToDoListWPF.WorkTaskViewModel.Description
+  name: Description
+  nameWithType: WorkTaskViewModel.Description
+  fullName: ToDoListWPF.WorkTaskViewModel.Description
+- uid: ToDoListWPF.WorkTaskViewModel.CreatedDate*
+  commentId: Overload:ToDoListWPF.WorkTaskViewModel.CreatedDate
+  name: CreatedDate
+  nameWithType: WorkTaskViewModel.CreatedDate
+  fullName: ToDoListWPF.WorkTaskViewModel.CreatedDate
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime

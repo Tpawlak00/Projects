@@ -1,0 +1,260 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/micha/OneDrive/Pulpit/Projects/net/ToDoListWPF",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "NAk6rUtoUkiqus+nF4b1eAduXEHR1jMbb1Is2+S+EWU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "EW+y+ZHWjHAhnAGmlmie8vb5ulXTdZ3VBMcpqRb7O2I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "BlPxk5mtl2kgfcZUgkEguqiSAR/EUyUTT4EdebwkQvs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "xlv63F9QA04nC5ZL5eW8mjZCl/QpkvDb4MKJlznKIgI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ToDoListWPF.App.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToDoListWPF.App.html",
+          "hash": "iQ/UQ7fZdAD3qtNr9dlW6NisV45fxRYvLTlWJcKjg20="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ToDoListWPF.BaseViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToDoListWPF.BaseViewModel.html",
+          "hash": "iufuHS9PL4kgKJrY2RZrK3aIP3QyvRcDiXHxIMXlcd4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ToDoListWPF.MainWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToDoListWPF.MainWindow.html",
+          "hash": "e12/7qiSWP25CW+7EezJJjw51TtLhOwA5553TOhBddw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ToDoListWPF.RelayCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToDoListWPF.RelayCommand.html",
+          "hash": "h7B3zJeZXg3FSLC9cOL0rG9kBpqaZ7xwX+6wn/Cst0Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ToDoListWPF.Task.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToDoListWPF.Task.html",
+          "hash": "xR85D5bwoGx/Z79ljBV+TKC8lUOOe2/gulOWuhn5DxM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ToDoListWPF.TaskListDBEntities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToDoListWPF.TaskListDBEntities.html",
+          "hash": "HoPfxeWux2wHSHNPK2ZlEpxY0XY82VERJiQaTgxGnTA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ToDoListWPF.WorkTAsksPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToDoListWPF.WorkTAsksPage.html",
+          "hash": "FVbxopGfL0xIFkO0Cw4G00fgWpNt3pbd/7sr5LVQqyQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ToDoListWPF.WorkTask.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToDoListWPF.WorkTask.html",
+          "hash": "2ku90oyama0oLjLj4jlwaxT6k9KUjvPPfNk0V/sP2jg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ToDoListWPF.WorkTaskViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToDoListWPF.WorkTaskViewModel.html",
+          "hash": "tjU/KblYS3XkXbo7fQVaeczTwLbplrwS/Z6s5tl1/ko="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ToDoListWPF.WorkTasksPageViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToDoListWPF.WorkTasksPageViewModel.html",
+          "hash": "l0jujWHfLsDx8cCleUmPtq87ECiWemjMzvQQf+R2SDQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ToDoListWPF.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ToDoListWPF.html",
+          "hash": "+1Z/j7bHgfQX9qeFEbRUBrbb0jkmbG5cp41wmiC8rOA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "obj/api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "x++UfEhsbz4d6AF6VPV9EW0bUessPBEgLVlrY0TTHNY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "Oa9PuD4E1hvZnCkVjUgzNBX6S00Zo5YilamTERTZo54="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 11,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

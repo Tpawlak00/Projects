@@ -1,5 +1,8 @@
 ﻿using System.ComponentModel;
 
+/// <summary>
+/// Klasa pozwalajaca na wywolanie gdy ktoras z wartosci sie zmieni w tasku
+/// </summary>
 namespace ToDoListWPF
 {
     public class BaseViewModel : INotifyPropertyChanged

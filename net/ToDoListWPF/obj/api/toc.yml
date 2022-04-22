@@ -1,0 +1,28 @@
+### YamlMime:TableOfContent
+- uid: ToDoListWPF
+  name: ToDoListWPF
+  items:
+  - uid: ToDoListWPF.App
+    name: App
+  - uid: ToDoListWPF.BaseViewModel
+    name: BaseViewModel
+  - uid: ToDoListWPF.LookupConverter
+    name: LookupConverter
+  - uid: ToDoListWPF.MainViewModel
+    name: MainViewModel
+  - uid: ToDoListWPF.MainWindow
+    name: MainWindow
+  - uid: ToDoListWPF.RelayCommand
+    name: RelayCommand
+  - uid: ToDoListWPF.Task
+    name: Task
+  - uid: ToDoListWPF.TaskListDBEntities
+    name: TaskListDBEntities
+  - uid: ToDoListWPF.WorkTask
+    name: WorkTask
+  - uid: ToDoListWPF.WorkTAsksPage
+    name: WorkTAsksPage
+  - uid: ToDoListWPF.WorkTasksPageViewModel
+    name: WorkTasksPageViewModel
+  - uid: ToDoListWPF.WorkTaskViewModel
+    name: WorkTaskViewModel
